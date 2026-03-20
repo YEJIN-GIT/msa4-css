@@ -1,0 +1,39 @@
+/* 폰트 지정 */
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+body {
+  /* font-family 첫번째 `돋움` 폰트가 없는 경우 그다음 `맑은 고딕` 폰트 적용됨 */
+  /* font-family: "돋움", "맑은 고딕", "굴림"; */
+  font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* html {
+  font-size: 100px;
+} */
+
+/* 폰트 크기 */
+.p-font-size {
+  /* px: 픽셀 단위로 폰트 크기 조절 */
+  font-size: 16px;
+}
+
+/* em: 부모 요소의 글자크기 기준 비율로 폰트 크기 조절. 디바이스별 폰트 다르게 하려면 */
+div {
+  font-size: 30px;
+}
+.p-font-size2 {
+  font-size: 2em;
+}
+
+/* rem: 최상위 요소(html 즉 브라우저 16px)의 글자크기 기준 비율로 폰트 크기 조절. 디바이스별 폰트 다르게 하려면 */
+/* .p-font-size2 {
+  font-size: 2rem;
+} */
+
+.p-font-weight {
+  /* 폰트 굵기: 100~900을 설정 가능 */
+  font-weight: 900;
+}
+
