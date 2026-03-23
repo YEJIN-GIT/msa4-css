@@ -1,0 +1,34 @@
+
+.div-tit1 {    
+  padding: 0px 30px 10px 20px;
+  border: 1px solid #c0c0c0a9;
+  color: #ffffff;
+  background-color: #000000;
+}
+.div-tit2 {
+  margin: 10px 0px 0px 0px; 
+  padding: 10px;
+  color: #ffffff;
+  background-color: #000000;
+}
+.div-con {  
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #c0c0c0a9;
+  border-top-width: 0px;
+}
+
+.con-tit {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ff0000;
+}
+.text1 {
+  color: #806901;
+}
+.text2 {
+  color: #0000ff;
+}
+.text3 {
+  font-size: 10px;
+}
