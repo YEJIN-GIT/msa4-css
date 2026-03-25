@@ -50,7 +50,7 @@ div {
 
 .div-fixed {
   background-color: orange;
-  /* fixed: 뷰포트를 기주능로 특정 위치에 고정시키기 위해 주로 사용 */
+  /* fixed: 뷰포트를 기준으로 특정 위치에 고정시키기 위해 주로 사용 */
   position: fixed;
   bottom: 50px;
   right: 50px;
