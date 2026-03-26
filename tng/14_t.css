@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+fieldset {
+  padding: 0 10px 10px;
+}
+
+legend {
+  font-size: 25px;
+  color: #f54ca6;
+}
+
+input, textarea {
+  background-color: transparent;
+  outline: none;
+
+}
+
+input:focus, textarea:focus {
+  border: 3px solid #ff0000;  
+}
+
+textarea {
+  width: 200px;
+  height: 150px;
+}
+
+.container {
+  background-image: url("../edu/cat1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;  /* width와 height둘 중 짧은 쪽을 늘려서 넣는다*/
+  background-position: center;
+}
+
+.required-category::before {
+  content: "*";
+  color: #ff0000;
+}
+
+.vertical-align-top {
+  vertical-align: top;
+}
+
+input[type="radio"]:checked + label {
+  color: #ff0000;
+}
+
+.btn-send {
+  position: relative;
+}
+
+.btn-send:hover::after {
+  content: "내용을 다시 한 번 확인해 주세요.";
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  top: -5px;
+  right: -280px;
+}
