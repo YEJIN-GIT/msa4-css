@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  height: 800px;
+  background-color: #757474;
+
+  display: flex;  /* flex 는 자식만`.row-box` 영향 미치고 후손`.item`에겐 영향 없음! */
+  flex-direction: column;
+
+  padding: 10px;
+  gap: 10px;
+}
+
+.row-box {
+  flex: 1;
+  display: flex;  /* flex 는 자식만`.item` 영향 미치고 후손에겐 영향 없음! */
+  gap: 10px;
+}
+
+.item {
+  background-color: #10cdee;
+  border: 1px solid black;
+  flex: 1;  /* flex-grow, flex-shrink, flex-basis 권장하고 width,height는 권장하지 않는다. */
+}
+
+.nested-box {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* .nested-box > .item:last-child {
+  flex: 2;
+} */
