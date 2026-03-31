@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 로우 6개로 해보자 */
+.container {
+  padding: 10px;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.item {
+  height: 200px;  /* 크기 지정 */
+  background-color: #0ba7a7;
+  border: 1px solid #000;  
+}
+
+/* 스마트폰에서 499까지는 1셀로 보기 편하게 */
+@media (max-width: 499px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
