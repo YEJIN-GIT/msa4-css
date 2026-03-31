@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+/* 기본 a 태그 브라우저 가상요소를 없애고 내가 a태그를 지정한다.*/
+a {
+  display: inline-block;
+  width: 100%;
+
+  color: #fff;
+  text-decoration: none;
+  padding: 3px 15px;
+}
+/*
+.nav-list > li {
+  padding: 3px 15px;
+}
+*/
+  
+.nav-list > li:hover {
+    background-color: black;
+    transition: all 1.5s;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+/* ------------------------ */
+/* 사이드바 관련 */
+/* ------------------------ */
+.side-bar {
+  background-color: #ff3b49;
+}
+
+.side-inner {
+  /* grid item인 `side-bar`에 position을 줘도 적용이 안되므로
+    `side-bar`의 콘텐츠(자식요소)들을 한번 더 `side-inner` 랩핑 해줬다.*/
+  position: sticky;
+  top: 0;
+  color: #fff;
+}
+
+.title {
+  /* padding: 50px 25px;  260331 삭제 그린-MSA505-0001 */
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-box {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.nav-title {
+  background-color: #ff5662;
+  padding: 15px;
+  font-weight: 900;
+}
+
+.nav-list {
+  list-style: none;
+  /* padding: 8px 0; */
+
+  /* flex 넣은 이유: 아이템들 간의 간격을 편하게 조절하기 위해 */
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+
+
+
+
+
+
+/* ------------------------ */
+/* 메인 관련 */
+/* ------------------------ */
+.main {
+  height: 200vh;  /* TODO: 사이드바 완료 시 꼭 지워! */
+  background-color: #f5f5f5;
+}
