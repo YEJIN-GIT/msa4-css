@@ -172,7 +172,7 @@ a {
 }
 
 .card-img {
-  padding-top: 150%;  /* 부모width 기준의 70%를 높이로하여 종횡비를 유지하여 영역을 가진다. */
+  padding-top: 150%;  /* 부모width 기준의 150%를 높이로하여 종횡비를 유지하여 영역을 가진다. */
   background-size: cover; 
   background-repeat: no-repeat;
   background-position: center;

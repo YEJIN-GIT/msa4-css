@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------------------- */
+/* 공통 관련 */
+/* ----------------------------------------- */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  background-color: blue;
+  color: #fff;
+  font-weight: 900;
+  border-radius: 50%;
+  border: 0;
+}
+.btn-small {
+  width: 40px;
+  height: 40px;
+}
+.btn-middle {
+  width: 60px;
+  height: 60px;  
+}
+.btn-large {
+  width: 90px;
+  height: 90px;  
+}
+
+/* ----------------------------------------- */
+/* 지역 관련 */
+/* ----------------------------------------- */
+.container {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+.side-bar {
+  background-color: #fa523b;
+  height: 150vh; /* TODO: 사이드바 완료시 삭제! */
+}
+
+.side-inner {
+  position:fixed;
+}
+
+.side-title {
+  height: 100px;
+  color: #fff;  
+  font-size: 30px;
+  font-weight: 900;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-box {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;  
+}
+
+.nav-title{
+  height: 50px;
+  background-color: #f87260;
+  color: #fff;  
+  font-weight: 900;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style-type: none;
+  list-style-position: inside;  
+}
+
+.nav-list > li {
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+}
+
+.nav-list > li:hover {
+  background-color: #000; 
+  transition: all 0.5s;
+}
+
+.search-box {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.search-input {
+  height: 40px;
+  width: 70%;
+}
+
+.banner-img {
+  background-image: url("../img/main_title.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;  
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* 카드 관련 */
+.card-img {
+  padding-top: 150%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 900;
+}
