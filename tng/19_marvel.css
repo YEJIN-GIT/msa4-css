@@ -4,6 +4,10 @@
   box-sizing: border-box;  
 }
 
+/* ------------------------------------------------ */
+/* 공통 스타일 관련 */
+/* ------------------------------------------------ */
+
 /* 기본 a 태그 브라우저 가상요소를 없애고 내가 a태그를 지정한다.*/
 a {
   display: inline-block;
@@ -18,6 +22,52 @@ a {
   padding: 3px 15px;
 }
 */
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #6e5af0;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.btn-middle {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-large {
+  width: 60px;
+  height: 60px;
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 0;
+  font-size: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .btn-top > a {
+  padding: 0;
+  font-size: 22px;
+} */
+
+.input-w-80p {
+  width: 80%;
+}
+
+/* ------------------------------------------------ */
+/* 지역 스타일 관련 */
+/* ------------------------------------------------ */
   
 .nav-list > li:hover {
     background-color: black;
@@ -29,9 +79,9 @@ a {
   grid-template-columns: 200px 1fr;
 }
 
-/* ------------------------ */
+/* ------------------------------------------------ */
 /* 사이드바 관련 */
-/* ------------------------ */
+/* ------------------------------------------------ */
 .side-bar {
   background-color: #ff3b49;
 }
@@ -74,17 +124,61 @@ a {
   gap: 5px;
 }
 
-
-
-
-
-
-
-
-/* ------------------------ */
+/* ------------------------------------------------ */
 /* 메인 관련 */
-/* ------------------------ */
+/* ------------------------------------------------ */
 .main {
-  height: 200vh;  /* TODO: 사이드바 완료 시 꼭 지워! */
-  background-color: #f5f5f5;
+  /* height: 200vh; */  /* TODO: 사이드바 완료 시 꼭 지워! */
+  min-height: 100vh;
+  background-color: #dfdfdf;  
+}
+
+.main-search-box {
+  display: flex;    /* 부모 요소에 flex 지정. 즉, 자식만 적용됨 */
+  justify-content: space-around;
+  padding: 5px;   
+}
+
+.main-banner {
+  background-image: url("../img/main_title.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* 교차축item은 한줄기준으로 ? 교차축content은 여려줄 경우? */
+}
+
+.sub-title {
+  color: #fff;
+  font-weight: 900;  /*  h2가 브라우저마다 다를수 있어 지정함 */
+  font-size: 50px;
+}
+
+.main-contents-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-img {
+  padding-top: 150%;  /* 부모width 기준의 70%를 높이로하여 종횡비를 유지하여 영역을 가진다. */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 900;
 }
